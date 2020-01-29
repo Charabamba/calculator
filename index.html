@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <h3 class="title">Calculator</h3>
+      <div class="container">
+        <div class="row">
+          <span class="calc-workspace"></span>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <button class="calc-btn" id="clear">С</button>
+          </div>
+          <div class="col-sm">
+            <button class="calc-btn" id="undo"><</button>
+          </div>
+          <div class="col-sm">
+            <button class="calc-btn calc-btn-common" data-set="%">%</button>
+          </div>
+          <div class="col-sm">
+            <button class="calc-btn calc-btn-common" data-set="/">/</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <button class="calc-btn calc-btn-common" data-set="7">7</button>
+          </div>
+          <div class="col-sm">
+            <button class="calc-btn calc-btn-common" data-set="8">8</button>
+          </div>
+          <div class="col-sm">
+            <button class="calc-btn calc-btn-common" data-set="9">9</button>
+          </div>
+          <div class="col-sm">
+            <button class="calc-btn calc-btn-common" data-set="*">*</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <button class="calc-btn calc-btn-common" data-set="4">4</button>
+          </div>
+          <div class="col-sm">
+            <button class="calc-btn calc-btn-common" data-set="5">5</button>
+          </div>
+          <div class="col-sm">
+            <button class="calc-btn calc-btn-common" data-set="6">6</button>
+          </div>
+          <div class="col-sm">
+            <button class="calc-btn calc-btn-common" data-set="-">-</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <button class="calc-btn calc-btn-common" data-set="1">1</button>
+          </div>
+          <div class="col-sm">
+            <button class="calc-btn calc-btn-common" data-set="2">2</button>
+          </div>
+          <div class="col-sm">
+            <button class="calc-btn calc-btn-common" data-set="3">3</button>
+          </div>
+          <div class="col-sm">
+            <button class="calc-btn calc-btn-common" data-set="+">+</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <button class="calc-btn" data-set="()">()</button>
+          </div>
+          <div class="col-sm">
+            <button class="calc-btn calc-btn-common" data-set="0">0</button>
+          </div>
+          <div class="col-sm">
+            <button class="calc-btn calc-btn-common" data-set=".">.</button>
+          </div>
+          <div class="col-sm">
+            <button class="calc-btn" id="result" data-set="=">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

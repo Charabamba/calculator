@@ -1,0 +1,52 @@
+body {
+  background-color: lightgreen;
+  outline: none;
+}
+.page-wrapper {
+  background-color: darkgrey;
+  width: 500px;
+  margin: 0 auto;
+  border: 2px solid black;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.title {
+  text-align: center;
+  margin: 20px;
+  font-weight: bold;
+}
+.calc-workspace {
+  width: 80%;
+  height: 40px;
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  overflow: hidden;
+}
+.calc-btn {
+  background-color: lightyellow;
+  height: 80px;
+  width: 80px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 80px;
+}
+.calc-btn:hover {
+  outline: none;
+  background-color: yellowgreen;
+}
+.calc-btn:focus {
+  outline: none;
+}
+.calc-btn:active {
+  background-color: yellow;
+  outline: none;
+}
