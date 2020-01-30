@@ -36,5 +36,5 @@ result.addEventListener("click", () => {
   workspaceValue = eval(workspaceValue);
   finalValidate(workspaceValue);
   document.querySelector(".calc-workspace").innerHTML = workspaceValue;
-  console.log(workspaceValue);
+  workspaceValue = workspaceValue.toString();
 });
