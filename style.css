@@ -1,9 +1,8 @@
 body {
-  background-color: lightgreen;
   outline: none;
 }
 .page-wrapper {
-  background-color: darkgrey;
+  background-color: grey;
   width: 500px;
   margin: 0 auto;
   border: 2px solid black;
@@ -27,9 +26,10 @@ body {
   font-size: 24px;
   text-align: center;
   overflow: hidden;
+  border: 2px solid black;
 }
 .calc-btn {
-  background-color: lightyellow;
+  background-color: #f2f2f2;
   height: 80px;
   width: 80px;
   margin-bottom: 20px;
@@ -41,12 +41,13 @@ body {
 }
 .calc-btn:hover {
   outline: none;
-  background-color: yellowgreen;
+  background-color: white;
 }
 .calc-btn:focus {
   outline: none;
 }
 .calc-btn:active {
-  background-color: yellow;
+  background-color: grey;
+  color: white;
   outline: none;
 }
