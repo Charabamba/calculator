@@ -5,7 +5,34 @@ const buttons = document.querySelectorAll(".calc-btn-common");
 buttons.forEach(button => {
   button.addEventListener("click", () => {
     workspaceValue = workspaceValue.concat(button.dataset.set);
-    console.log(workspaceValue);
+    document.querySelector(".calc-workspace").innerHTML = workspaceValue;
+  });
+});
+
+const operators = document.querySelectorAll(".calc-btn-operator");
+operators.forEach(operator => {
+  operator.addEventListener("click", () => {
+    if (workspaceValue === "" && operator.dataset.set === "-") {
+      workspaceValue = workspaceValue.concat(operator.dataset.set);
+    } else if (
+      workspaceValue != "" &&
+      workspaceValue.indexOf(".") === false &&
+      operator.dataset.set === "."
+    ) {
+      workspaceValue = workspaceValue.concat(operator.dataset.set);
+    } else if (
+      (workspaceValue != "" &&
+        workspaceValue[workspaceValue.length - 1] == "*") ||
+      workspaceValue[workspaceValue.length - 1] == "/" ||
+      workspaceValue[workspaceValue.length - 1] == "%" ||
+      workspaceValue[workspaceValue.length - 1] == "+" ||
+      workspaceValue[workspaceValue.length - 1] == "undefined" ||
+      workspaceValue[workspaceValue.length - 1] == "-" ||
+      workspaceValue[workspaceValue.length - 1] == "."
+    ) {
+    } else if (workspaceValue != "") {
+      workspaceValue = workspaceValue.concat(operator.dataset.set);
+    }
     document.querySelector(".calc-workspace").innerHTML = workspaceValue;
   });
 });
